@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JetpeckDemo</string>
+    <string name="str_learn_lifecycle">learn lifecycle</string>
+</resources>
