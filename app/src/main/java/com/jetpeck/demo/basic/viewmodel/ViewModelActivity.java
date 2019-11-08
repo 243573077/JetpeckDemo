@@ -31,5 +31,7 @@ public class ViewModelActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        ViewModelProviders.of(this).get(ViewModelOne.class).updateUser();//更新数据
     }
+
 }
