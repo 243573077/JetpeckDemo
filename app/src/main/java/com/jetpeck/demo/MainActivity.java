@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.jetpeck.demo.basic.lifecycles.CustomLifeCyclesActivity;
 import com.jetpeck.demo.basic.lifecycles.SystemLifeCyclesActivity;
+import com.jetpeck.demo.basic.viewmodel.ViewModelActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.tvCustomLifeCycle).setOnClickListener(this);
         findViewById(R.id.tvLifeCycle).setOnClickListener(this);
+        findViewById(R.id.tvViewModel).setOnClickListener(this);
+        findViewById(R.id.tvLiveData).setOnClickListener(this);
     }
 
     @Override
@@ -30,6 +33,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tvLifeCycle:
                 intent.setClass(this, SystemLifeCyclesActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.tvViewModel:
+                intent.setClass(this, ViewModelActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tvLiveData:
                 break;
         }
     }

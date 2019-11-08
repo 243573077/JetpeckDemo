@@ -3,4 +3,6 @@
     <string name="str_learn_lifecycle">lifecycle</string>
     <string name="str_learn_sys_lifecycle">AppCompat lifecycle</string>
     <string name="str_learn_custom_lifecycle">Custom lifecycle</string>
+    <string name="str_learn_view_model">ViewModel</string>
+    <string name="str_learn_live_data">LiveData</string>
 </resources>

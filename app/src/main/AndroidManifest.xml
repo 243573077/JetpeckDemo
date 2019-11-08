@@ -27,6 +27,7 @@
         <activity
             android:name=".basic.lifecycles.CustomLifeCyclesActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".basic.viewmodel.ViewModelActivity" />
     </application>
 
 </manifest>

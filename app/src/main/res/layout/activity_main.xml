@@ -37,6 +37,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="@string/str_learn_sys_lifecycle" />
+
+            <TextView
+                android:id="@+id/tvViewModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/str_learn_view_model" />
+
+            <TextView
+                android:id="@+id/tvLiveData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/str_learn_live_data" />
         </LinearLayout>
 
 
