@@ -28,20 +28,20 @@ public class ViewModelOne extends ViewModel {
 
     private void loadUsers() {
         //do what you want to
-        Log.d(TAG, "loadUsers: from local or network");
+        Log.d(TAG, "loadUsers: from local");
         loadData();
     }
 
     private void loadData() {
         List<User> data = new ArrayList<>();
         data.add(new User("test", (int) (Math.round(1.0) * 10), "info"));
-//        users.postValue(data);//异步：接收端在主线程回调数据
-        users.setValue(data);//同步：接收端数据回调与发送端同一个线程
+        users.postValue(data);//异步：接收端在主线程回调数据
+//        users.setValue(data);//同步：接收端数据回调与发送端同一个线程
         Log.d(TAG, "loadData: user--" + data.toString());
     }
 
     public void updateUser() {
-        Log.d(TAG, "updateUser: from network");
+        Log.d(TAG, "updateUser: ----------");
         loadUsers();
     }
 }
