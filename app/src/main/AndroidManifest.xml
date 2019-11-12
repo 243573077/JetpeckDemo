@@ -29,6 +29,7 @@
             android:screenOrientation="portrait" />
         <activity android:name=".basic.viewmodel.ViewModelActivity" />
         <activity android:name=".basic.livedata.SysLiveDataActivity" />
+        <activity android:name=".basic.livedata.CustomLiveDataActivity" />
     </application>
 
 </manifest>

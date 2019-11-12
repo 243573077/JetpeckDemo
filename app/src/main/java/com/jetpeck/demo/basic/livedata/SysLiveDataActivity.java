@@ -57,5 +57,6 @@ public class SysLiveDataActivity extends AppCompatActivity {
         super.onResume();
         //模拟更新，修改ViewModel中保存的数据
         ViewModelProviders.of(this).get(ViewModelOne.class).updateUser();//更新数据
+        //或者 model.updateUser();
     }
 }
